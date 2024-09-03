@@ -10,10 +10,11 @@
 
 <body>
     <div class="container">
-        <div class="header">calc</div>
+        <div class="header">calculator</div>
         <input type="text" readonly id="display">
         <div class="input-key">
-            <button onclick="appendToDisplay('7')">7</button>
+            <div class="div1">
+                <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">9</button>
             <button onclick="deleteDisplay()">DEL</button>
@@ -29,8 +30,13 @@
             <button onclick="appendToDisplay('0')">0</button>
             <button onclick="appendToDisplay('/')">/</button>
             <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="resetDisplay()">RESET</button>
+            </div>
+            
+            
+            <div class="div2">
+                <button onclick="resetDisplay()">RESET</button>
             <button onclick="calculate()">=</button>
+            </div>
         </div>
 
     </div>
